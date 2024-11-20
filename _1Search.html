@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary search </title>
+</head>
+<body>
+    <Script>
+       let arr=[10,20,30,40];
+       let t=10;
+       let flag=0;
+       let f=0;
+       let l =0;
+       let mid;
+       while(f<=l){
+         arr[mid] =parseInt((f+l)/2);
+         if(arr[mid]===t){
+            flag++;
+         }
+         else if(arr[mid]<=t){
+            l=[mid]+1;
+
+         }
+         else{
+            f=arr[mid]+1;
+         }
+       }
+       if(flag!=0){
+        console.log("present");
+       }
+       else{
+        console.log("not");
+       }
+       console.log("kk")
+    </Script>
+</body>
+</html>
